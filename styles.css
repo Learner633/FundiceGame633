@@ -1,0 +1,39 @@
+
+body {
+    background-color: #393E46;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    color: #8f8f8f;
+    font-family: Indie flower;
+}
+/* title section */
+
+.refresh {
+    font-family: 'lobster', cursive;
+    font-size: 8rem;
+    text-shadow: 5px 0 #232931;
+    color: #4ECCA3;
+    margin: 20px;
+}
+
+.dice {
+    font-family: Indie flower;
+    display: inline-block;
+    font-size: 2rem ;
+    color: #4ECCA3;
+    margin: 0 20px;
+}
+
+.die {
+    width: 220px;
+}
+
+.draw {
+    font-family: Indie flower;
+    font-size: 2.2rem ;
+    color: #4ECCA3;
+}
+
