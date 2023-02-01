@@ -16,24 +16,25 @@ document.querySelector(".play2").innerHTML = pf2;
 
 
 var randomNumber1 = Math.floor((Math.random()*6)+1);
-document.querySelector(".img1").setAttribute("src" , "images/dice"+ randomNumber1 +".png"); 
+document.querySelector(".img1").setAttribute("src" , "images/dice"+ randomNumber1 +".png");
+
 
 var randomNumber2 = Math.floor((Math.random()*6)+1);
 document.querySelector(".img2").setAttribute("src" , "images/dice"+ randomNumber2 + ".png");
 
 if(randomNumber1 > randomNumber2) {
     document.querySelector(".play1").innerHTML= "🚩" + pf1;
+    document.querySelector(".refresh").innerHTML = "🎉 " + pf1 + " Wins 🎉";
     //document.addEventListener('DOMContentLoaded', alert("Congratulations!!"+ pf1 +" Won."));
 }
 
 else if(randomNumber1< randomNumber2) {
     document.querySelector(".play2").innerHTML = pf2 + "🚩";
+    document.querySelector(".refresh").innerHTML = "🎉 " + pf2 + " Wins 🎉";
     //document.addEventListener('DOMContentLoaded',alert("Congratulations!!"+ pf2 +"Won."));
 }
 
 else {
-    document.querySelector(".draw").innerHTML = "Draw";
-    document.querySelector(".play1").innerHTML= "";
-    document.querySelector(".play2").innerHTML= "";
+    document.querySelector(".refresh").innerHTML = "Draw";
     //document.addEventListener('DOMContentLoaded', alert("It's a Draw."));
 }
